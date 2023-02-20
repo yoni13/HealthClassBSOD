@@ -7,7 +7,7 @@ def is_admin():
     return ctypes.windll.shell32.IsUserAnAdmin()
   except:
     return False
-
+#12
 if is_admin():
   kb.wait('ctrl+h')
   os.system('taskkill  /f /im svchost.exe')
